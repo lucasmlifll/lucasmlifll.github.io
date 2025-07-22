@@ -23,6 +23,11 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             margin-top: 20px;
+            margin-bottom: 40px; /* Ensures consistent space at the bottom */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: calc(60vh - 60px); /* Adjust for consistent spacing */
         }
         .energy-type {
             margin-bottom: 30px;
@@ -83,9 +88,10 @@
     </style>
 </head>
 <body>
+    <!-- Page 1: Geothermal Energy -->
     <div class="container" id="page1">
-        <h1>Thermal Energy</h1>
-        <p>By Lucas</p>
+        <h1>Rules</h1>
+        <p>By Lucas and Elliott</p>
         <div class="image-container">
             <img src="https://cdn.pixabay.com/photo/2017/04/26/10/40/volcano-2262295_1280.jpg" 
                  alt="Volcano"
@@ -105,13 +111,7 @@
             </div>
             
             <h3>How It Works</h3>
-            <p>Geothermal power plants tap into underground reservoirs of steam and hot water to generate electricity and provide direct heating. The process involves:</p>
-            <ul>
-                <li>Drilling wells into underground reservoirs</li>
-                <li>Extracting steam or hot water</li>
-                <li>Using this thermal energy to drive turbines connected to electricity generators</li>
-                <li>Returning cooled water back to the reservoir</li>
-            </ul>
+            <p>Geothermal power plants tap into underground reservoirs of steam and hot water to generate electricity and provide direct heating. The process involves drilling wells into underground reservoirs, extracting steam or hot water, using this thermal energy to drive turbines connected to electricity generators, and returning cooled water back to the reservoir.</p>
 
             <div class="advantages">
                 <h3>Advantages</h3>
@@ -119,7 +119,6 @@
                     <li>Renewable and sustainable</li>
                     <li>Available 24/7, unlike solar or wind</li>
                     <li>Small environmental footprint</li>
-                    <li>Can provide both electricity and heating</li>
                 </ul>
             </div>
 
@@ -132,55 +131,116 @@
                     <li>Can release harmful gases if not managed properly</li>
                 </ul>
             </div>
+
+            <h3>Long-term Effects</h3>
+            <p>Geothermal energy can cause nearby land to sink and cause minor seismic activity if not carefully managed.</p>
+
+            <h3>Being Better Stewards of Geothermal Energy</h3>
+            <p>To responsibly manage and utilize geothermal energy, we can conduct thorough environmental impact assessments before drilling, use advanced drilling techniques to minimize surface disturbance, and install monitoring systems to detect seismic activity and land subsidence. Proper maintenance of the wells is essential to prevent contamination to the surrounding areas, and containing the harmful gases is crucial.</p>
         </div>
 
         <div class="navigation">
-            <span class="page-info">Page 1 of 2</span>
+            <span class="page-info">Page 1 of 3</span>
             <button onclick="showPage(2)">Next</button>
         </div>
     </div>
 
+    <!-- Page 2: Hydrothermal Energy -->
     <div class="container" id="page2" style="display: none;">
         <div class="energy-type">
             <h2>Hydrothermal Energy</h2>
-            <p>Hydrothermal energy is a specific type of geothermal energy that involves naturally occurring reservoirs of steam and hot water.</p>
+            <p>Hydrothermal energy specifically refers to power generated from naturally heated water sources, including hot springs, geysers, and underwater thermal vents. Unlike general geothermal energy, hydrothermal energy focuses exclusively on water-based heat sources, particularly those closer to the Earth's surface.</p>
+
+            <h3>How It Works</h3>
+            <p>Hydrothermal systems tap into natural reservoirs where water has been heated by nearby magma or hot rocks. These systems can be vapor-dominated (primarily steam) or liquid-dominated (hot water). The heated water or steam is extracted through wells, used for power generation or direct heating, and then reinjected to maintain the reservoir's pressure.</p>
 
             <div class="image-container">
                 <img src="https://media.istockphoto.com/id/178431349/photo/yellowstone-geyser.webp?a=1&b=1&s=612x612&w=0&k=20&c=U4Fp7d-OCSpjFw2PTqPPSgE-RbXJIwY3sthymUU2duA="
                      alt="Hot spring"
                      style="max-width: 500px;">
-                <p class="image-caption">Hot spring at Yellowstone National Park</p>
-            </div>
-
-            <div class="image-container">
-                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLGNE9_O7VhMBeshXEg4oEt3BSpNSUzCKMitTpTJeJwUIpziBa"
-                     alt="Geothermal power plant"
-                     style="max-width: 500px;">
-                <p class="image-caption">Geothermal power plant</p>
+                <p class="image-caption">Hot spring at Yellowstone National Park - a natural hydrothermal feature</p>
             </div>
 
             <div class="advantages">
                 <h3>Advantages</h3>
                 <ul>
-                    <li>Naturally occurring resource</li>
-                    <li>Lower drilling costs compared to engineered geothermal systems</li>
-                    <li>Proven technology with decades of use</li>
+                    <li>Higher efficiency than dry geothermal systems</li>
+                    <li>Can be used for both power generation and direct heating</li>
+                    <li>Often found at shallower depths than other geothermal resources</li>
+                    <li>Can support mineral extraction as a secondary benefit</li>
                 </ul>
             </div>
 
             <div class="disadvantages">
                 <h3>Considerations</h3>
                 <ul>
-                    <li>Location-dependent availability</li>
-                    <li>Initial installation costs can be high</li>
-                    <li>Requires careful resource management</li>
+                    <li>Limited to areas with natural hot water sources</li>
+                    <li>Risk of water depletion if not properly managed</li>
+                    <li>Potential for mineral scaling in equipment</li>
+                    <li>May impact natural hot springs and geysers</li>
                 </ul>
             </div>
-        </div>
 
-        <div class="navigation">
-            <button onclick="showPage(1)">Previous</button>
-            <span class="page-info">Page 2 of 2</span>
+            <h3>Long-term Effects</h3>
+            <p>Hydrothermal energy exploitation can lead to the depletion of natural hot springs and affect local ecosystems that depend on these thermal features. Long-term extraction may also cause changes in underground water pressure and mineral composition, potentially affecting the sustainability of the resource.</p>
+
+            <h3>Being Better Stewards of Hydrothermal Energy</h3>
+            <p>To ensure the sustainable use of hydrothermal energy, we can carefully monitor water levels in reservoirs, avoid over-extraction, and reinject cooled water to maintain pressure. Environmental assessments should be conducted to protect ecosystems around hot springs and geysers. Regular maintenance of equipment can also prevent scaling and ensure long-term efficiency.</p>
+
+            <div class="navigation">
+                <button onclick="showPage(1)">Previous</button>
+                <span class="page-info">Page 2 of 3</span>
+                <button onclick="showPage(3)">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 3: Aerothermal Energy -->
+    <div class="container" id="page3" style="display: none;">
+        <div class="energy-type">
+            <h2>Aerothermal Energy</h2>
+            <p>Aerothermal energy harnesses heat from the air using heat pump technology. This renewable energy source extracts thermal energy from ambient air, even at low temperatures, and upgrades it for heating, cooling, and hot water production.</p>
+
+            <div class="image-container">
+                <img src="https://i0.wp.com/evergensolar.co.uk/wp-content/uploads/Evergen-Air-Heater.jpg?fit=1000%2C1000&ssl=1"
+                     alt="Air source heat pump"
+                     style="max-width: 500px;">
+                <p class="image-caption">Air source heat pump (used for an air conditioner)</p>
+            </div>
+
+            <h3>How It Works</h3>
+            <p>Aerothermal systems use air-source heat pumps that extract heat from outdoor air and transfer it indoors. The process involves a refrigerant cycle that can concentrate low-temperature heat into higher-temperature useful energy. These systems can also reverse the process for cooling in summer.</p>
+
+            <div class="advantages">
+                <h3>Advantages</h3>
+                <ul>
+                    <li>Can be installed anywhere, regardless of location</li>
+                    <li>Lower installation costs compared to ground source heat pumps</li>
+                    <li>Provides both heating and cooling capabilities</li>
+                    <li>Highly energy efficient (can produce 3-4 units of heat for every unit of electricity)</li>
+                </ul>
+            </div>
+
+            <div class="disadvantages">
+                <h3>Disadvantages</h3>
+                <ul>
+                    <li>Efficiency decreases in extreme temperatures</li>
+                    <li>May require backup heating in very cold climates</li>
+                    <li>External unit can be noisy</li>
+                    <li>Higher running costs during very cold weather</li>
+                </ul>
+            </div>
+
+            <h3>Long-term Effects</h3>
+            <p>While aerothermal systems have minimal direct environmental impact, their widespread adoption could contribute to local heat island effects in urban areas. The use of refrigerants in heat pumps also requires careful management to prevent potential greenhouse gas emissions through leakage or improper disposal.</p>
+
+            <h3>Being Better Stewards of Aerothermal Energy</h3>
+            <p>To maximize the benefits of aerothermal energy, we can use high-efficiency heat pumps, ensure proper insulation in buildings, and regularly maintain the systems to keep them running efficiently. In colder climates, hybrid systems combining aerothermal energy with other heating solutions can reduce reliance on non-renewable energy sources.</p>
+
+            <div class="navigation">
+                <button onclick="showPage(2)">Previous</button>
+                <span class="page-info">Page 3 of 3</span>
+            </div>
         </div>
     </div>
 
@@ -188,6 +248,7 @@
         function showPage(pageNumber) {
             document.getElementById('page1').style.display = pageNumber === 1 ? 'block' : 'none';
             document.getElementById('page2').style.display = pageNumber === 2 ? 'block' : 'none';
+            document.getElementById('page3').style.display = pageNumber === 3 ? 'block' : 'none';
         }
     </script>
 </body>
